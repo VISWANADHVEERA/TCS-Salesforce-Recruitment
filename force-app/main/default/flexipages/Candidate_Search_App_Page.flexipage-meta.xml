@@ -3,16 +3,12 @@
     <masterLabel>Candidate Search App Page</masterLabel>
     <description>App page for testing candidateSearch LWC</description>
     <type>AppPage</type>
-    <pageTemplate>oneRegion</pageTemplate>
-    <regions>
-        <region>
-            <name>region1</name>
-            <components>
-                <componentInstance>
-                    <componentName>c:candidateSearch</componentName>
-                </componentInstance>
-            </components>
-        </region>
-    </regions>
+    <template>oneRegion</template>
+    <componentInstances>
+        <componentInstance>
+            <componentName>c:candidateSearch</componentName>
+            <regionName>main</regionName>
+        </componentInstance>
+    </componentInstances>
     <isAvailableInComposer>true</isAvailableInComposer>
 </FlexiPage>
