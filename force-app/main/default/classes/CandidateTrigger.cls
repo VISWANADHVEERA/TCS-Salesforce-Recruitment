@@ -7,8 +7,13 @@ public with sharing class CandidateTriggerHandler {
         
         List<Candidate__c> existingCandidates = [SELECT Email__c FROM Candidate__c WHERE Email__c IN :emailSet];
         
+        Set<String> existingEmails = new Set<String>();
+        for (Candidate__c c : existingCandidates) {
+            existingEmails.add(c.Email__c);
+        }
+        
         for(Candidate__c cand : newList) {
-            if(existingCandidates.size() > 0) {
+            if(existingEmails.contains(cand.Email__c)) {
                 cand.Email__c.addError('A candidate with this email already exists in the system.');
             }
         }
