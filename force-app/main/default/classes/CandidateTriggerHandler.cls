@@ -15,6 +15,8 @@ public with sharing class CandidateTriggerHandler {
         for(Candidate__c cand : newList) {
             if(existingEmails.contains(cand.Email__c)) {
                 cand.Email__c.addError('A candidate with this email already exists in the system.');
+            } else {
+                existingEmails.add(cand.Email__c);
             }
         }
     }

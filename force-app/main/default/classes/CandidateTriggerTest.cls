@@ -18,7 +18,7 @@ public class CandidateTriggerTest {
         }
         Test.stopTest();
     }
-    }
+
 
     @isTest
     static void testValidCandidateInsertionWithExistingDuplicates() {
