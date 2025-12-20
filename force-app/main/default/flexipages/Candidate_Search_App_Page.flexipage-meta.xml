@@ -4,6 +4,7 @@
         <itemInstances>
             <componentInstance>
                 <componentName>candidateSearch</componentName>
+                <identifier>candidateSearch_1</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>

@@ -1,7 +1,8 @@
 <template>
-    <lightning-card title="Candidate Search">
+    <lightning-card title="Candidate Search (Updated)">
         <div class="slds-p-around_medium">
-            <lightning-input label="Search" value={searchKey} onchange={handleKeyChange} placeholder="Enter name"></lightning-input>
+            <lightning-input label="Search" value={searchKey} onchange={handleKeyChange}
+                placeholder="Enter name"></lightning-input>
             <lightning-button label="New Candidate" onclick={handleCreate} class="slds-m-top_small"></lightning-button>
         </div>
         <template if:true={candidates}>
