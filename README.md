@@ -6,7 +6,7 @@ A custom Salesforce application designed to streamline the hiring process. It tr
 
 ### 🚀 Key Features
 * **Automated Candidate Tracking:** Uses Apex Triggers to validate candidate email uniqueness.
-* **Custom UI:** A Lightning Web Component (LWC) for a "Quick Candidate Search."
+* **Custom UI:** A Lightning Web Component (LWC) for "Quick Candidate Search" that allows searching by name, displaying detailed results including email, and navigating directly to create new candidates.
 * **Process Automation:** Record-triggered flows to notify HR when a candidate is hired.
 * **Data Security:** Role-based access for Interviewers and HR Managers.
 
