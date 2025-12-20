@@ -5,6 +5,6 @@ public with sharing class CandidateController {
         if (name != null && name.trim().length() > 0) {
             key = '%' + String.escapeSingleQuotes(name.trim()) + '%';
         }
-        return [SELECT Id, Name FROM Candidate__c WHERE Name LIKE :key LIMIT 50];
+        return [SELECT Id, Name, Email__c FROM Candidate__c WHERE Name LIKE :key LIMIT 50];
     }
 }
