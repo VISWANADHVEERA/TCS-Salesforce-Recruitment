@@ -6,10 +6,9 @@
             <lightning-button label="New Candidate" onclick={handleCreate} class="slds-m-top_small"></lightning-button>
         </div>
         <template if:true={candidates}>
-            <div class="slds-p-around_medium">
-                <template for:each={candidates} for:item="cand">
-                    <p key={cand.Id}>{cand.Name}</p>
-                </template>
+            <div class="slds-m-top_medium">
+                <lightning-datatable key-field="Id" data={candidates} columns={columns} hide-checkbox-column="true">
+                </lightning-datatable>
             </div>
         </template>
     </lightning-card>
